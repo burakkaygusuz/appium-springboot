@@ -1,4 +1,4 @@
-package io.github.burakkaygusuz.appiumspringboot.appium.config;
+package io.github.burakkaygusuz.appiumspringboot.config;
 
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;

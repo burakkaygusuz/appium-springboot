@@ -1,4 +1,4 @@
-package io.github.burakkaygusuz.appiumspringboot.appium.service;
+package io.github.burakkaygusuz.appiumspringboot.service;
 
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.springframework.beans.factory.annotation.Autowired;
