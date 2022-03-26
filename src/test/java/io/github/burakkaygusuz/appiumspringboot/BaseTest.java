@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 @SpringBootTest
@@ -14,10 +16,20 @@ public class BaseTest extends AbstractTestNGSpringContextTests {
     @Autowired
     private AppiumService appiumService;
 
-    @Test
-    void firstTest() {
+    @BeforeMethod(alwaysRun = true)
+    public void setUp() {
         appiumService.start();
+    }
+
+    @Test()
+    void firstTest() {
         System.out.println("URL: " + appiumService.getUrl());
-        appiumService.stop();
+    }
+
+    @AfterMethod(alwaysRun = true)
+    public void tearDown() {
+        if (appiumService.isRunning()) {
+            appiumService.stop();
+        }
     }
 }
