@@ -1,4 +1,4 @@
-package io.github.burakkaygusuz.appiumspringboot.service;
+package io.github.burakkaygusuz.appiumspringboot.appium.service;
 
 import java.net.URL;
 

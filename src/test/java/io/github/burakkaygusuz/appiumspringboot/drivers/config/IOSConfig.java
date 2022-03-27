@@ -1,4 +1,4 @@
-package io.github.burakkaygusuz.appiumspringboot.config;
+package io.github.burakkaygusuz.appiumspringboot.drivers.config;
 
 import io.appium.java_client.ios.options.XCUITestOptions;
 import org.springframework.beans.factory.annotation.Value;

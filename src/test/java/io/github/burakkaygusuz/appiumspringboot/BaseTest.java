@@ -1,6 +1,6 @@
 package io.github.burakkaygusuz.appiumspringboot;
 
-import io.github.burakkaygusuz.appiumspringboot.service.AppiumService;
+import io.github.burakkaygusuz.appiumspringboot.appium.service.AppiumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;

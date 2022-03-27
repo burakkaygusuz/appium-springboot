@@ -1,4 +1,4 @@
-package io.github.burakkaygusuz.appiumspringboot.config;
+package io.github.burakkaygusuz.appiumspringboot.synchronizations.config;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
