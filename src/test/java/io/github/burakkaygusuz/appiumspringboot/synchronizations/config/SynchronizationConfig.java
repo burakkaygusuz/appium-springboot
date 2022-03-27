@@ -13,7 +13,7 @@ import java.time.Duration;
 @Configuration
 public class SynchronizationConfig {
 
-    @Value("${default.timeout:20}")
+    @Value("20")
     private int timeout;
 
     @Bean
