@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class DriverConfig {
@@ -24,6 +25,7 @@ public class DriverConfig {
     }
 
     @Bean
+    @Scope("driverScope")
     @Primary
     @ConditionalOnProperty(name = "platform", havingValue = "android")
     public AndroidDriver androidDriver() {
@@ -31,6 +33,7 @@ public class DriverConfig {
     }
 
     @Bean
+    @Scope("driverScope")
     @Primary
     @ConditionalOnProperty(name = "platform", havingValue = "iOS")
     public IOSDriver iosDriver() {
