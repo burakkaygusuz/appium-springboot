@@ -14,4 +14,4 @@ stereotype = '{"udid":"emulator-5554", "platformName":"android", "appium:platfor
 
 [[relay.configs]]
 max-sessions = 1
-stereotype = '{"udid":"B7AD8753-6E29-4DFF-89C1-80565F7F1F77", "platformName":"iOS","appium:platformVersion":"15.2"}'
+stereotype = '{"udid":"07AE47DA-E6C9-4D03-B647-4DFE1EE733D7", "platformName":"iOS","appium:platformVersion":"15.4"}'
