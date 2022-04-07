@@ -24,7 +24,7 @@ public class AppiumConfig {
     AppiumServiceBuilder serviceBuilder() {
         return new AppiumServiceBuilder()
                 .withIPAddress("127.0.0.1")
-                .usingAnyFreePort()
+                .usingPort(4723)
                 .withEnvironment(environment())
                 .withArgument(GeneralServerFlag.SESSION_OVERRIDE)
                 .withArgument(GeneralServerFlag.LOG_LEVEL, "info")
