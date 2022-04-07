@@ -30,6 +30,7 @@ public class AppiumConfig {
                 .withArgument(GeneralServerFlag.LOG_LEVEL, "info")
                 .withArgument(GeneralServerFlag.RELAXED_SECURITY)
                 .withArgument(GeneralServerFlag.LOCAL_TIMEZONE)
+                .withArgument(GeneralServerFlag.USE_DRIVERS, "uiautomator2,xcuitest")
                 .withArgument(GeneralServerFlag.USE_PLUGINS, "images")
                 .withArgument(() -> "-ka", "800");
     }
