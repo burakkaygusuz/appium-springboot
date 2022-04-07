@@ -111,6 +111,11 @@
                             <version>${maven-surefire-plugin.version}</version>
                         </dependency>
                     </dependencies>
+                    <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>${project.basedir}/testng.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
