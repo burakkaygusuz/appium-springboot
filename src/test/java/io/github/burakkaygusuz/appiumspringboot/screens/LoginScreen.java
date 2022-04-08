@@ -8,21 +8,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class LoginScreen extends BaseScreen {
 
-    @AndroidFindBy()
+    @AndroidFindBy(xpath = "android.widget.TextView[contains(@text, 'Login')]")
     @iOSXCUITFindBy(accessibility = "Login")
     private WebElement title;
 
-    @AndroidFindBy()
+    @AndroidFindBy(accessibility = "username")
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTextField[`label == \"username\"`]")
     @iOSXCUITFindBy(iOSNsPredicate = "label == \"username\" AND name == \"username\" AND value == \"Username\"")
     private WebElement usernameInput;
 
-    @AndroidFindBy()
+    @AndroidFindBy(accessibility = "password")
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeSecureTextField[`label == \"password\"`]")
     @iOSXCUITFindBy(iOSNsPredicate = "label == \"password\" AND name == \"password\" AND value == \"Password\"")
     private WebElement passwordInput;
 
-    @AndroidFindBy()
+    @AndroidFindBy(accessibility = "loginBtn")
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeOther[`label == \"loginBtn\"`][2]")
     private WebElement loginButton;
 
