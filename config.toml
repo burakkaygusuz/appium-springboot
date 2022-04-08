@@ -10,7 +10,7 @@ status-endpoint = "/status"
 
 [[relay.configs]]
 max-sessions = 1
-stereotype = '{"udid":"emulator-5554", "platformName":"android", "appium:platformVersion":"12"}'
+stereotype = '{"udid":"emulator-5554", "platformName":"android", "appium:platformVersion":"11"}'
 
 [[relay.configs]]
 max-sessions = 1
