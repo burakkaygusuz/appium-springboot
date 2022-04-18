@@ -1,7 +1,6 @@
 package io.github.burakkaygusuz.appiumspringboot.appium.service;
 
 import io.appium.java_client.service.local.AppiumDriverLocalService;
-import io.github.burakkaygusuz.appiumspringboot.appium.service.AppiumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
