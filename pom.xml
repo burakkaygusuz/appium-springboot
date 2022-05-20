@@ -26,7 +26,7 @@
         <!-- Dependencies -->
         <selenium.version>4.1.4</selenium.version>
         <appium.version>8.0.0</appium.version>
-        <testng.version>7.5</testng.version>
+        <testng.version>7.6.0</testng.version>
         <!-- Plugins -->
         <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
     </properties>
