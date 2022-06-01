@@ -24,9 +24,6 @@ public class IOSConfig {
     @Value("${ios.udid}")
     private String udid;
 
-    @Value("${bundle.id}")
-    private String bundleId;
-
     @Bean
     public XCUITestOptions xcuiTestOptions() {
         return new XCUITestOptions()
@@ -34,7 +31,6 @@ public class IOSConfig {
                 .setApp(app)
                 .setDeviceName(deviceName)
                 .setUdid(udid)
-                .setBundleId(bundleId)
                 .setNoReset(false)
                 .setAbsoluteWebLocations(true)
                 .setAutoAcceptAlerts(true)
