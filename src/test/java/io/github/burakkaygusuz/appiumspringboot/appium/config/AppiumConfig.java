@@ -29,7 +29,8 @@ public class AppiumConfig {
     File appiumJS() {
         String actualJSPath;
         if (System.getProperty("os.name").contains("Win")) {
-            Process process = Runtime.getRuntime().exec("where appium");
+            Process process = new ProcessBuilder("where appium").start();
+            assert process.getInputStream().read() == -1;
             try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
                 actualJSPath = bufferedReader.lines()
                         .findFirst()
