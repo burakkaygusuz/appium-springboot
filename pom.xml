@@ -25,7 +25,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <!-- Dependencies -->
         <selenium.version>4.2.0</selenium.version>
-        <appium.version>8.0.0</appium.version>
+        <appium.version>8.1.0</appium.version>
         <testng.version>7.6.0</testng.version>
         <!-- Plugins -->
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
@@ -77,6 +77,12 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

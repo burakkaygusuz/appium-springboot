@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Appium Spring Boot Test Suite" parallel="classes" thread-count="2">
+<suite name="Appium Spring Boot Test Suite" parallel="tests" thread-count="2">
 
     <test name="Android Test">
         <parameter name="platform" value="android"/>

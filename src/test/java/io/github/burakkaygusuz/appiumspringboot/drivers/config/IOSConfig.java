@@ -4,12 +4,12 @@ import io.appium.java_client.ios.options.XCUITestOptions;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.test.context.TestPropertySource;
 
 import java.net.URL;
 
 @Configuration
-@PropertySource("classpath:device.properties")
+@TestPropertySource("classpath:application.properties")
 public class IOSConfig {
 
     @Value("${ios.version}")
@@ -24,9 +24,6 @@ public class IOSConfig {
     @Value("${ios.udid}")
     private String udid;
 
-    @Value("${bundle.id}")
-    private String bundleId;
-
     @Bean
     public XCUITestOptions xcuiTestOptions() {
         return new XCUITestOptions()
@@ -34,7 +31,6 @@ public class IOSConfig {
                 .setApp(app)
                 .setDeviceName(deviceName)
                 .setUdid(udid)
-                .setBundleId(bundleId)
                 .setNoReset(false)
                 .setAbsoluteWebLocations(true)
                 .setAutoAcceptAlerts(true)
